@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <div id="nav1">
+        <div class="container">
+            <nav>
+                <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SUBMISSION</a>
+                    <ul class="Dropdown">
+                        <li><a href="assignment.html">NAD-4TH SEM</a></li>
+                        <li><a href="DataS.html">DATA SCIENCE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">BLOG</a></li>
+                </ul>
+            </nav>
+            <div class="nav1-text">
+               <p>Welcome To My Digital Space!</p>
+               <h1>I'm Swarnali Bhattacharyya</h1>
+            </div>
+         </div>
+     </div>
+     <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="myphoto.jpg">
+                    </div>
+                    <div class="about-col-2">
+                           <h1 class="sub">About Me</h1>
+                           <p class="red">Hello! these are the pages of a portfolio belonging to a 19-year-old
+                             in which i will try to tell you about my works. I'm on a journey of building 
+                             my future and learning some self - compassion. All while working 
+                             on my stem degree. this maybe out of blue but as you scroll down 
+                             you would be acquainted with me quite well and so try to keep up with me.
+                        </p>
+
+                           <p class="red1">I like to read and write, always have and more than
+                             likely will. I love the new technology, physics, Ai, astronomy. 
+                             I like to work on different at time, which ever topic piques my interest
+                              it just get added to my list. The foremost thing I am working on is my 
+                              communication skills, for that i try to volunteer in events, connect with the 
+                              community. 
+                        </p>
+
+                        <div class="sub-title">
+                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                             <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents  active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span>Java</span></li>
+                                <li><span>Sql</span></li>
+                                <li><span>Content writing</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>12th - Queens' College</li>
+                                <li><span>2021-current</span><br>Mtech(IT) - Internationl Institute of Professional Studies,DAVV</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+     </script>
+    </body>
+</html>
